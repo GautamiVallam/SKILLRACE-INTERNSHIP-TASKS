@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    int N = in.nextInt(); // Reading the no. of change Pranav needs back
+	    int[] Cur = {1, 2, 5, 10, 50, 100}; //notes in the currency System
+	    int i =5;
+	    int S=0; //the total number of notes
+	    while(N!=0){
+	        int d=0;
+	        d=N/Cur[i];
+	        N= N-(d*Cur[i]);
+	        S=S+d;
+	        i-=1;
+	    }
+	    System.out.println(S);
+	}
+}
