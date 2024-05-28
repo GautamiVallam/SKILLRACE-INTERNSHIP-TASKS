@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    int N = in.nextInt(); // Reading the no. of change Pranav needs back
+	    if(N>15&&N<60)
+	    System.out.println("Allowed");
+	    else
+	    System.out.println("Not Allowed");
+	}
+}
